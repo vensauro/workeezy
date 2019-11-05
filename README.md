@@ -9,7 +9,7 @@ Projeto iniciado na disciplina de Economia da Inovação.
 
 Antes de mais nada, verifique que possui uma versão do PHP e uma do NodeJS instalada em seu computador, caso já possua, digite o comando no terminal:
 
-`npm install` ou, se preferir (eu recomendo) `yarn` (sim, apenas yarn *-*)
+`npm install` ou, se preferir (eu recomendo) `yarn` (sim, apenas yarn \*-\*)
 
 Agora rode o comando para instalar as dependências do _Composer_
 
