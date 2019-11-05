@@ -10,7 +10,6 @@ function Example() {
                         <div className="card-header">
                             <h1>WORKEEZY</h1>
                         </div>
-
                         <div className="card-body">Trabalho gamificado ;D</div>
                     </div>
                 </div>
