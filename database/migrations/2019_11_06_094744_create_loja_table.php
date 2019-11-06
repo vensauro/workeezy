@@ -15,6 +15,8 @@ class CreateLojaTable extends Migration
     {
         Schema::create('loja', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedInteger('qtd_itens')->nullable();
+            $table->decimal('valor_gasto',12,6)->nullable();
             $table->timestamps();
         });
     }

@@ -20,8 +20,8 @@ class CreateFuncionariosTable extends Migration
             $table->string('cargo');
             $table->string('login');
             $table->string('senha');
-            $table->int('xp')->unsigned();
-            $table->int('nivel')->unsigned();
+            $table->unsignedInteger('xp');
+            $table->unsignedInteger('nivel');
             $table->int('workpoints');
             $table->timestamps();
         });

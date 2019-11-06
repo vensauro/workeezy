@@ -15,6 +15,16 @@ class CreateProdutosTable extends Migration
     {
         Schema::create('produtos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedInteger('loja_id');
+            $table->foreign('loja_id')
+                  ->references('id')->on('loja')
+                  ->onDelete('no action');
+            $table->string('titulo');
+            $table->string('descricao')->nullable();
+            $table->unsignedInteger('quantidade')->nullable();
+            $table->unsignedInteger('compras_realizadas')->nullable();
+            $table->unsignedDecimal('valor_real', 12, 6);
+            $table->unsignedInteger('valor_workpoints');
             $table->timestamps();
         });
     }
